@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Bitbucket-Darkmode",
+    "version": "1.0",
+    "description": "Changes the page styles on Bitbucket.org to a dark mode theme",
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.bitbucket.org/*"
+            ],
+            "js": [
+                "bitbucket-darkmode.js"
+            ]
+        }
+    ]
+}
